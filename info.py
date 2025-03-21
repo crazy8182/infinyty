@@ -27,12 +27,12 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/Infinity_XBotz/5")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5787509903 5151096227 6459154456 6109954429 6054009014').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6859451629 5787509903 5151096227 6459154456 6109954429 6054009014').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001984741311').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5787509903 5151096227').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '5787509903 5460055223 5151096227 6078897011 6580503344 6054009014').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001984741311')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002429092558')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001904441794')
@@ -82,7 +82,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 FIRST_CHANNEL = environ.get('FIRST_CHANNEL', '-1001984741311')
 SECOND_CHANNEL = environ.get('SECOND_CHANNEL', '-1001992981386')
 FQDN = environ.get('FQDN', 'vmi2293858.contaboserver.net:5000')
-first_channel = environ.get('FIRST_CHANNEL', '-1001984741311')
+first_channel = environ.get('FIRST_CHANNEL', '-1002429092558')
 second_channel = environ.get('SECOND_CHANNEL', '-1001992981386')
 VID1 = environ.get('VID1', 'https://telegram.me/Infinity_XBotz/46')
 ENABLE_UPSTREAM_UPDATE = is_enabled((environ.get('ENABLE_UPSTREAM_UPDATE', "True")), True)
